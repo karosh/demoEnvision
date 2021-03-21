@@ -5,8 +5,7 @@ Feature: AmazonLogin
     Given user enter the "https://www.amazon.com" URL
     And click on Sign in
     Then Amazon login page is opened
-    When user provides valid credentials as; "demoenvision@gmail.com", "Test"
-    # update
+    When user provides valid credentials as; "demoenvision@gmail.com", "Testuser.1"
     Then user should be able to login to Amazon
 
   @DES-5 @closeBrowser @OPEN
