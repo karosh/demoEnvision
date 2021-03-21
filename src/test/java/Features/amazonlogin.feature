@@ -15,5 +15,4 @@ Feature: AmazonLogin
     Then Amazon login page is opened
     When user provides invalid "demoenvision@gmail.com" and "password"
     Then user should not be able to login
-    # update via code
     And user should see a "message" about invalid credentials
