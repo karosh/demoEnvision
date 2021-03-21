@@ -16,4 +16,5 @@ Feature: AmazonLogin
     Then Amazon login page is opened
     When user provides invalid "username" and "password"
     Then user should stay on the Amazon login page
+    #update via code
     And user should see a "message" about invalid credentials
