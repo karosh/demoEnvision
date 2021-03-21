@@ -1,7 +1,7 @@
 Feature: AmazonLogin
 
-  @DES-5 @OPEN @closeBrowser
-  Scenario: Amazon login with valid credentials
+  @DES-5 @closeBrowser @OPEN
+  Scenario: Amazon login with valid credentials (NEW)
     Given user enter the "https://www.amazon.com" URL
     And click on Sign in
     Then Amazon login page is opened
