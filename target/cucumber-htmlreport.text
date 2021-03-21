@@ -1,0 +1,38 @@
+
+@DES-5 @OPEN @closeBrowser
+Scenario: Amazon login with valid credentials                               [90m# com.mypackage.features/Features/amazonlogin.feature:5[0m
+  [32mGiven [0m[32muser enter the [0m[32m[1m"https://www.amazon.com"[0m[32m URL[0m                         [90m# com.mypackage.StepDefinitions.AmazonLogin.userEnterAmazonURL(java.lang.String)[0m
+  [32mAnd [0m[32mclick on Sign in[0m                                                      [90m# com.mypackage.StepDefinitions.AmazonLogin.clickOnSignIn()[0m
+  [32mThen [0m[32mAmazon login page is opened[0m                                          [90m# com.mypackage.StepDefinitions.AmazonLogin.amazonLoginPageIsOpened()[0m
+  [32mWhen [0m[32muser provides valid credentials as; [0m[32m[1m"demoenvision@gmail.com"[0m[32m, [0m[32m[1m"Test"[0m [90m# com.mypackage.StepDefinitions.AmazonLogin.userProvidesValidAnd(java.lang.String,java.lang.String)[0m
+  [31mThen [0m[31muser should be able to login to Amazon[0m                               [90m# com.mypackage.StepDefinitions.AmazonLogin.userShouldBeAbleToLoginToAmazon()[0m
+      [31morg.awaitility.core.ConditionTimeoutException: Condition with lambda expression in com.mypackage.Common.WaitOperations that uses org.openqa.selenium.WebDriver, org.openqa.selenium.WebDriverorg.openqa.selenium.By was not fulfilled within 40 seconds.
+	at org.awaitility.core.ConditionAwaiter.await(ConditionAwaiter.java:136)
+	at org.awaitility.core.CallableCondition.await(CallableCondition.java:79)
+	at org.awaitility.core.CallableCondition.await(CallableCondition.java:27)
+	at org.awaitility.core.ConditionFactory.until(ConditionFactory.java:840)
+	at org.awaitility.core.ConditionFactory.until(ConditionFactory.java:802)
+	at com.mypackage.Common.WaitOperations.waitUntillVisibleAndClickable(WaitOperations.java:17)
+	at com.mypackage.POM.AmazonMainPage.checkCustomerName(AmazonMainPage.java:44)
+	at com.mypackage.StepDefinitions.AmazonLogin.userShouldBeAbleToLoginToAmazon(AmazonLogin.java:41)
+	at ✽.user should be able to login to Amazon(classpath:com.mypackage.features/Features/amazonlogin.feature:11)
+[0m
+
+@DES-5 @OPEN @closeBrowser
+Scenario: Amazon login with invalid credentials                      [90m# com.mypackage.features/Features/amazonlogin.feature:15[0m
+  [32mGiven [0m[32muser enter the [0m[32m[1m"https://www.amazon.com"[0m[32m URL[0m                  [90m# com.mypackage.StepDefinitions.AmazonLogin.userEnterAmazonURL(java.lang.String)[0m
+  [32mAnd [0m[32mclick on Sign in[0m                                               [90m# com.mypackage.StepDefinitions.AmazonLogin.clickOnSignIn()[0m
+  [32mThen [0m[32mAmazon login page is opened[0m                                   [90m# com.mypackage.StepDefinitions.AmazonLogin.amazonLoginPageIsOpened()[0m
+  [32mWhen [0m[32muser provides invalid [0m[32m[1m"demoenvision@gmail.com"[0m[32m and [0m[32m[1m"password"[0m [90m# com.mypackage.StepDefinitions.AmazonLogin.userProvidesInvalidAnd(java.lang.String,java.lang.String)[0m
+  [32mThen [0m[32muser should not be able to login[0m                              [90m# com.mypackage.StepDefinitions.AmazonLogin.userShouldNotBeAbleToLogin()[0m
+  [32mAnd [0m[32muser should see a [0m[32m[1m"message"[0m[32m about invalid credentials[0m          [90m# com.mypackage.StepDefinitions.AmazonLogin.userShouldSeeAAboutInvalidCredentials(java.lang.String)[0m
+
+@DES-5 @OPEN
+Scenario: OLDER TESTS for Amazon login [90m# com.mypackage.features/Features/oldertests.feature:4[0m
+  [33mWhen [0m[33molder tests[0m                     [90m# null[0m
+  [36mThen [0m[36mresults[0m                         [90m# null[0m
+
+@DES-5 @OPEN
+Scenario: OLD TEST for Amazon login [90m# com.mypackage.features/Features/oldtests.feature:4[0m
+  [33mWhen [0m[33mold test[0m                     [90m# null[0m
+  [36mThen [0m[36mresults[0m                      [90m# null[0m

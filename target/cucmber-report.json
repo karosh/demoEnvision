@@ -1,0 +1,348 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-03-21T17:21:33.553Z",
+        "line": 5,
+        "name": "Amazon login with valid credentials",
+        "description": "",
+        "id": "amazonlogin;amazon-login-with-valid-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 113243000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.mypackage.Common.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8316884000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enter the \"https://www.amazon.com\" URL",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.amazon.com\"",
+                  "offset": 15
+                }
+              ],
+              "location": "com.mypackage.StepDefinitions.AmazonLogin.userEnterAmazonURL(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2509274000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "click on Sign in",
+            "match": {
+              "location": "com.mypackage.StepDefinitions.AmazonLogin.clickOnSignIn()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 916578000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Amazon login page is opened",
+            "match": {
+              "location": "com.mypackage.StepDefinitions.AmazonLogin.amazonLoginPageIsOpened()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3046298000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user provides valid credentials as; \"demoenvision@gmail.com\", \"Test\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"demoenvision@gmail.com\"",
+                  "offset": 36
+                },
+                {
+                  "val": "\"Test\"",
+                  "offset": 62
+                }
+              ],
+              "location": "com.mypackage.StepDefinitions.AmazonLogin.userProvidesValidAnd(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.awaitility.core.ConditionTimeoutException: Condition with lambda expression in com.mypackage.Common.WaitOperations that uses org.openqa.selenium.WebDriver, org.openqa.selenium.WebDriverorg.openqa.selenium.By was not fulfilled within 40 seconds.\n\tat org.awaitility.core.ConditionAwaiter.await(ConditionAwaiter.java:136)\n\tat org.awaitility.core.CallableCondition.await(CallableCondition.java:79)\n\tat org.awaitility.core.CallableCondition.await(CallableCondition.java:27)\n\tat org.awaitility.core.ConditionFactory.until(ConditionFactory.java:840)\n\tat org.awaitility.core.ConditionFactory.until(ConditionFactory.java:802)\n\tat com.mypackage.Common.WaitOperations.waitUntillVisibleAndClickable(WaitOperations.java:17)\n\tat com.mypackage.POM.AmazonMainPage.checkCustomerName(AmazonMainPage.java:44)\n\tat com.mypackage.StepDefinitions.AmazonLogin.userShouldBeAbleToLoginToAmazon(AmazonLogin.java:41)\n\tat ✽.user should be able to login to Amazon(classpath:com.mypackage.features/Features/amazonlogin.feature:11)\n",
+              "duration": 42621596000,
+              "status": "failed"
+            },
+            "line": 11,
+            "name": "user should be able to login to Amazon",
+            "match": {
+              "location": "com.mypackage.StepDefinitions.AmazonLogin.userShouldBeAbleToLoginToAmazon()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@DES-5"
+          },
+          {
+            "name": "@OPEN"
+          },
+          {
+            "name": "@closeBrowser"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-21T17:22:31.187Z",
+        "line": 15,
+        "name": "Amazon login with invalid credentials",
+        "description": "",
+        "id": "amazonlogin;amazon-login-with-invalid-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 108624000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.mypackage.Common.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7912379000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user enter the \"https://www.amazon.com\" URL",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.amazon.com\"",
+                  "offset": 15
+                }
+              ],
+              "location": "com.mypackage.StepDefinitions.AmazonLogin.userEnterAmazonURL(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2382280000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "click on Sign in",
+            "match": {
+              "location": "com.mypackage.StepDefinitions.AmazonLogin.clickOnSignIn()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 885217000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Amazon login page is opened",
+            "match": {
+              "location": "com.mypackage.StepDefinitions.AmazonLogin.amazonLoginPageIsOpened()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2561700000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user provides invalid \"demoenvision@gmail.com\" and \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"demoenvision@gmail.com\"",
+                  "offset": 22
+                },
+                {
+                  "val": "\"password\"",
+                  "offset": 51
+                }
+              ],
+              "location": "com.mypackage.StepDefinitions.AmazonLogin.userProvidesInvalidAnd(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3352984000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user should not be able to login",
+            "match": {
+              "location": "com.mypackage.StepDefinitions.AmazonLogin.userShouldNotBeAbleToLogin()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 176000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user should see a \"message\" about invalid credentials",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"message\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.mypackage.StepDefinitions.AmazonLogin.userShouldSeeAAboutInvalidCredentials(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@DES-5"
+          },
+          {
+            "name": "@OPEN"
+          },
+          {
+            "name": "@closeBrowser"
+          }
+        ]
+      }
+    ],
+    "name": "AmazonLogin",
+    "description": "",
+    "id": "amazonlogin",
+    "keyword": "Feature",
+    "uri": "classpath:com.mypackage.features/Features/amazonlogin.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-03-21T17:22:48.435Z",
+        "line": 4,
+        "name": "OLDER TESTS for Amazon login",
+        "description": "",
+        "id": "veryoldtests;older-tests-for-amazon-login",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "older tests",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 36000,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "results",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@DES-5"
+          },
+          {
+            "name": "@OPEN"
+          }
+        ]
+      }
+    ],
+    "name": "VeryOldTests",
+    "description": "",
+    "id": "veryoldtests",
+    "keyword": "Feature",
+    "uri": "classpath:com.mypackage.features/Features/oldertests.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-03-21T17:22:48.445Z",
+        "line": 4,
+        "name": "OLD TEST for Amazon login",
+        "description": "",
+        "id": "amazonlogin;old-test-for-amazon-login",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "old test",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 60000,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "results",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@DES-5"
+          },
+          {
+            "name": "@OPEN"
+          }
+        ]
+      }
+    ],
+    "name": "AmazonLogin",
+    "description": "",
+    "id": "amazonlogin",
+    "keyword": "Feature",
+    "uri": "classpath:com.mypackage.features/Features/oldtests.feature",
+    "tags": []
+  }
+]
