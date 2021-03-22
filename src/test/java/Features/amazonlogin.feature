@@ -16,3 +16,8 @@ Feature: AmazonLogin
     When user provides invalid "demoenvision@gmail.com" and "password"
     Then user should not be able to login
     And user should see a "message" about invalid credentials
+
+  @DES-17 @OPEN
+  Scenario: Duumy Test
+    Given test
+    When dummy
