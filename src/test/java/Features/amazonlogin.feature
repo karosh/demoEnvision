@@ -20,5 +20,4 @@ Feature: AmazonLogin
   @DES-17 @OPEN
   Scenario: Duumy Test
     Given user enter the "https://www.amazon.com" URL
-    Given test
     When dummy
