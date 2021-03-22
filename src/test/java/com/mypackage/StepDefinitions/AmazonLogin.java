@@ -22,7 +22,7 @@ public class AmazonLogin {
 
 	@And("click on Sign in")
 	public void clickOnSignIn() {
-		this.amazonLoginPage = amazonMainPage.clickOnSignIn();
+		this.amazonLoginPage = this.amazonMainPage.clickOnSignIn();
 	}
 
 	@Then("Amazon login page is opened")
