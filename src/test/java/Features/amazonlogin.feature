@@ -8,7 +8,7 @@ Feature: AmazonLogin
     When user provides valid credentials as; "demoenvision@gmail.com", "Testuser.1"
     Then user should be able to login to Amazon
 
-  @DES-5 @closeBrowser @OPEN
+  @DES-5 @DES-9 @closeBrowser @OPEN
   Scenario: Amazon login with invalid credentials (NEW)
     Given user enter the "https://www.amazon.com" URL
     And click on Sign in
