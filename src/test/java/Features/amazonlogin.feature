@@ -21,3 +21,9 @@ Feature: AmazonLogin
   Scenario: Duumy Test
     Given user enter the "https://www.amazon.com" URL
     When dummy
+
+  @DES-5 @OPEN
+  Scenario: HelloWorld
+    Given This is a test
+    When I see HelloWorld
+    Then Yeeyyy!!!
